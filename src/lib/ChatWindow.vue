@@ -337,7 +337,8 @@ export default {
 
 	methods: {
 		updateResponsive() {
-			this.isMobile = window.innerWidth < this.responsiveBreakpoint
+			let box = document.querySelector('.vac-card-window');
+			this.isMobile = box.offsetWidth < this.responsiveBreakpoint
 		},
 		toggleRoomsList() {
 			this.showRoomsList = !this.showRoomsList
